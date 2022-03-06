@@ -1,1 +1,5 @@
 dist/
+pkg/
+
+os-agent
+*.pkg.tar.xz
