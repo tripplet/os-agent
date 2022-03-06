@@ -9,10 +9,10 @@ import (
 	"github.com/godbus/dbus/v5/introspect"
 	"github.com/godbus/dbus/v5/prop"
 
-	"github.com/home-assistant/os-agent/apparmor"
+	//"github.com/home-assistant/os-agent/apparmor"
 	"github.com/home-assistant/os-agent/cgroup"
-	"github.com/home-assistant/os-agent/datadisk"
-	"github.com/home-assistant/os-agent/system"
+	//"github.com/home-assistant/os-agent/datadisk"
+	//"github.com/home-assistant/os-agent/system"
 	logging "github.com/home-assistant/os-agent/utils/log"
 )
 
@@ -62,9 +62,9 @@ func main() {
 	InitializeDBus(conn)
 
 	logging.Info.Printf("Listening on service %s ...", busName)
-	datadisk.InitializeDBus(conn)
-	system.InitializeDBus(conn)
-	apparmor.InitializeDBus(conn)
+	//datadisk.InitializeDBus(conn)
+	//system.InitializeDBus(conn)
+	//apparmor.InitializeDBus(conn)
 	cgroup.InitializeDBus(conn)
 
 	_, err = daemon.SdNotify(false, daemon.SdNotifyReady)
