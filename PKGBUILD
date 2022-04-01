@@ -1,5 +1,5 @@
 pkgname=homeassistant-os-agent
-pkgver=2022.3
+pkgver=2022.4
 pkgrel=1
 pkgdesc='Patched OS-Agent for Home Assistant'
 arch=('x86_64' 'armv7h' 'aarch64')
@@ -7,7 +7,7 @@ makedepends=(go)
 
 build() {
   cd $srcdir/..
-  go build -trimpath -ldflags="-s -w -X main.version="
+  go build -trimpath -ldflags="-s -w -X main.version=${pkgver}-${pkgrel}"
 }
 
 package()
