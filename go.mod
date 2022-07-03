@@ -8,7 +8,7 @@ require (
 	github.com/cyphar/filepath-securejoin v0.2.3
 	github.com/docker/docker v20.10.13+incompatible
 	github.com/fntlnz/mountinfo v0.0.0-20171106231217-40cb42681fad
-	github.com/getsentry/sentry-go v0.12.0
+	github.com/getsentry/sentry-go v0.13.0
 	github.com/godbus/dbus/v5 v5.1.0
 	github.com/opencontainers/runc v1.1.0
 	github.com/sirupsen/logrus v1.8.1
