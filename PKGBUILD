@@ -1,5 +1,5 @@
 pkgname=homeassistant-os-agent
-pkgver=2022.4
+pkgver=2022.07
 pkgrel=1
 pkgdesc='Patched OS-Agent for Home Assistant'
 arch=('x86_64' 'armv7h' 'aarch64')
